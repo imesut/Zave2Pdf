@@ -94,7 +94,7 @@ for page in pages:
             height = int(sub.attrib["height"])
             x = int(sub.attrib["x"]) + width/2
             y = int(sizes[1]) - int(sub.attrib["y"]) - height/2
-            c.drawCentredString(x, y, "Icerigi bir sonraki sayfada goruntuleyebilirsiniz.")#the Turkish message of "you can view the content at following page"
+            c.drawCentredString(x, y, "You can view the content at the following page")
             print "|#|",
 
     c.save()

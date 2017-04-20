@@ -4,7 +4,7 @@ _Zave2Pdf_ is a Python script that, converts a zave file into a pdf file, by usi
 
 __IMPORTANT__: Script requires to apply [developer's patch](https://github.com/pmaupin/pdfrw/pull/63) to pdfrw, because related pull request hasn't merged to master repository. For detailed information and application steps look at __Prepare pdfrw__ title.
 
-##Running Script
+## Running Script
 
 Zave2Pdf work with two parameters; __-zave__ to indicate zave file and __-s__ to indicate (optional) output pdf file.
 
@@ -17,9 +17,9 @@ Indicating the save path and file name(optional);
      Zave2Pdf.py -zave /Path/of/ZaveFile.zave -s /Save/Directory/FileName.pdf
 
 
-##Prepare pdfrw
+## Prepare pdfrw
 
-###Download pdfrw
+### Download pdfrw
 Original git repository of pdfrw master is [pmaupin/pdfrw/](https://github.com/pmaupin/pdfrw/). And clone url can be found from _Clone or Download_ button as [https://github.com/pmaupin/pdfrw.git](https://github.com/pmaupin/pdfrw.git)
 
 And related patch file can be found as [https://github.com/pmaupin/pdfrw/pull/63.patch](https://github.com/pmaupin/pdfrw/pull/63.patch)
@@ -46,12 +46,12 @@ And apply patch file,
 
 After patch, pdfrw is ready!
 
-###Install pdfrw
+### Install pdfrw
 
 	python setup.py build
 	sudo python setup.py install
      
-##Some Notes
+## Some Notes
 
 - Zave files can consist scrollable contents. But pdfs can't, in traditional ways. Zave2Pdf adds scrollable content as following page and prints a message into scroll area as "You can view the content at the following page"
 - This script based on zave files which contains pdf and png files. This kind of zave files is the majortiy of zave files. When any problems occured, please use issues or send an e-mail to me.
